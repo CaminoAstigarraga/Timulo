@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 
 using UnityEngine.UI; 
 
@@ -10,6 +13,9 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
 
+   
+
+    
     public void Awake()
     {
         // Comprobamos que la instancia del GameManager exista, de no ser así, definimos éste como la instancia actual
@@ -30,6 +36,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
 
+
+      
     }
 
     void Options()
@@ -37,17 +45,18 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void Controls()
-    {
+   
 
-    }
+        
+    
     // Update is called once per frame
     void Update()
     {
-
+      
     }
 
     public void StartGame(){
         SceneManager.LoadScene("GameScene", LoadSceneMode.Single);
     }
 }
+    
