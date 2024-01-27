@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8f69e883c787c8848ac6ca9995815b9a
+guid: 5d2d6138bcba5e146a19ea565489f9fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4928662766410364070
-    second: NoPasa_00_0
+      213: -2493882744711135937
+    second: Nuevo acceso directo.lnk_31_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,22 +98,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NoPasa_00_0
+      name: Nuevo acceso directo.lnk_31_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 630
-        height: 888
+        x: 153
+        y: 75
+        width: 314
+        height: 683
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a475914ca0266440800000000000000
-      internalID: 4928662766410364070
+      spriteID: f3d340a5bd2f36dd0800000000000000
+      internalID: -2493882744711135937
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: feb74c9bcc117fd439dc5866dd3a857a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NoPasa_00_0: 4928662766410364070
+      Nuevo acceso directo.lnk_31_0: -2493882744711135937
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

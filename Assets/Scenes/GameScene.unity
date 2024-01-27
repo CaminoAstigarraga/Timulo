@@ -683,6 +683,71 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1001 &467633369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 376755927551820809, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.367694
+      objectReference: {fileID: 0}
+    - target: {fileID: 376755927551820809, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 376755927551820809, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376755927551820809, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 376755927551820809, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376755927551820809, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376755927551820809, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376755927551820809, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376755927551820809, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 376755927551820809, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909955078147039007, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: aliciaAudios
+      value: 
+      objectReference: {fileID: 296288949}
+    - target: {fileID: 909955078147039007, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: PlayerController
+      value: 
+      objectReference: {fileID: 480113592}
+    - target: {fileID: 7471563221119255276, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+      propertyPath: m_Name
+      value: 'Alicia '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
 --- !u!1 &480113592
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcSpawner: {fileID: 32707852}
+  alicia: {fileID: 752611933}
   barFiller: {fileID: 1514329322}
   timerValues: 0
 --- !u!4 &480113594
@@ -1012,6 +1078,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752538992}
   m_CullTransparentMesh: 1
+--- !u!114 &752611933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 909955078147039007, guid: 24b07a7625aca9a4bbc7640d57827e1f, type: 3}
+  m_PrefabInstance: {fileID: 467633369}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad83233d9860354b91d80e07489ccd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &763893731
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,3 +2486,4 @@ SceneRoots:
   - {fileID: 763893734}
   - {fileID: 434172363}
   - {fileID: 3854969735955047121}
+  - {fileID: 467633369}

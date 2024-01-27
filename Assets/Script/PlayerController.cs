@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 {
     public NpcSpawner npcSpawner;
 
+    public Alicia alicia;
+
     private bool lockInput;
     // Tiempo que se quita el control al jugador mientras la cola avanza
     private float lockInputTime = 1.0f;
@@ -54,6 +56,9 @@ public class PlayerController : MonoBehaviour
                 // Deja pasar al npc
                 npcSpawner.removeFromQueue(0);
                 currentCapacity -= bonus[timerValues] * 100;
+
+                //StartCoroutine(alicia.GetComponent<Alicia>().AliciaYes());
+                
             }
 
             else if (Input.GetMouseButtonDown(1))
@@ -63,6 +68,8 @@ public class PlayerController : MonoBehaviour
                 // Obliga al Npc a volver
                 npcSpawner.removeFromQueue(1);
                 currentCapacity += pena[timerValues] * 100;
+
+                //StartCoroutine(alicia.GetComponent<Alicia>().AliciaNo());
             }
 
             //if (Input.GetMouseButtonDown(2)) Debug.Log("Pressed middle-click.");

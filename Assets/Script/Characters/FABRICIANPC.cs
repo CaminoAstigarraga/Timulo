@@ -51,7 +51,6 @@ public class FABRICIANPC : MonoBehaviour
         {
             float step = velocity * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, target, step);
-            Debug.Log(velocity);
         }
 
     }
