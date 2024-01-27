@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 441562c4cb2d12541b4aae16fd6aff84
+guid: 017558702f599bd4bb8c6426707c4c2b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8692204609035541421
-    second: 1_2sCjxkwsWiZ2sl1nl2FQNw_0
+      213: -6722959998993977934
+    second: NopTrans_39_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_2sCjxkwsWiZ2sl1nl2FQNw_0
+      name: NopTrans_39_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 360
-        height: 222
+        x: 152
+        y: 75
+        width: 317
+        height: 682
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dab9394e90ae0a870800000000000000
-      internalID: 8692204609035541421
+      spriteID: 2bdadcc208f33b2a0800000000000000
+      internalID: -6722959998993977934
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      1_2sCjxkwsWiZ2sl1nl2FQNw_0: 8692204609035541421
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

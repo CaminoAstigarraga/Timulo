@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 441562c4cb2d12541b4aae16fd6aff84
+guid: 9725642355eb6a845aff6c813a291fc6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8692204609035541421
-    second: 1_2sCjxkwsWiZ2sl1nl2FQNw_0
+      213: 8312983933196124671
+    second: NoPasa_49_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_2sCjxkwsWiZ2sl1nl2FQNw_0
+      name: NoPasa_49_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 360
-        height: 222
+        x: 147
+        y: 75
+        width: 291
+        height: 681
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dab9394e90ae0a870800000000000000
-      internalID: 8692204609035541421
+      spriteID: ff14fa9d7d6ad5370800000000000000
+      internalID: 8312983933196124671
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      1_2sCjxkwsWiZ2sl1nl2FQNw_0: 8692204609035541421
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
