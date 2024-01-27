@@ -44,14 +44,16 @@ public class PlayerController : MonoBehaviour
             {
                 lockInput = true;
                 Debug.Log("Pressed left-click.");
-                npcSpawner.removeFromQueue();
+                // Deja pasar al npc
+                npcSpawner.removeFromQueue(0);
             }
 
             else if (Input.GetMouseButtonDown(1))
             {
                 lockInput = true;
                 Debug.Log("Pressed right-click.");
-                npcSpawner.removeFromQueue();
+                // Obliga al Npc a volver
+                npcSpawner.removeFromQueue(1);
             }
 
             //if (Input.GetMouseButtonDown(2)) Debug.Log("Pressed middle-click.");

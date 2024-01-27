@@ -14,7 +14,10 @@ public class FABRICIANPC : MonoBehaviour
 
     private Vector3 target;
     private Vector3 position;
-    private Camera cam; 
+    private Camera cam;
+
+    private Vector3 rejectedFinalTarget = new Vector3(-17.0f, -1.51f, 0);
+    private Vector3 aceptedFinalTarget = new Vector3(12.0f, -1.51f, 0);
 
 
     Rigidbody2D rb;
@@ -52,6 +55,28 @@ public class FABRICIANPC : MonoBehaviour
     public void updateTarget(Vector3 newTarget)
     {
         target = newTarget;
+    }
+
+    public void setDestination(int dir)
+    {
+        //Convertimos el collider en trigger
+        gameObject.GetComponent<Collider2D>().isTrigger = true;
+
+        // Aplicamos una máscara de color a los personajes y los movemos un layer por detrás para que no se superpongan
+        byte rgbValue = 100;
+        GetComponent<SpriteRenderer>().color = new Color32(rgbValue, rgbValue, rgbValue, 255);
+        GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+        if (dir == 0)
+        {
+            target = aceptedFinalTarget;
+
+        }
+        else
+        {
+            target = rejectedFinalTarget;
+
+        }
     }
 
 }

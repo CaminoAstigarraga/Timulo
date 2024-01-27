@@ -55,26 +55,16 @@ public class NpcSpawner : MonoBehaviour
         newNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint0, SpawnPoint1);
     }
 
-    void finalPosition()
-    {
-    
-    }
-    public void removeFromQueue()
+
+    public void removeFromQueue(int dir)
     {
         GameObject aux = queue[3];
         for (int i = 3; i > 0; i--)
         {
             queue[i] = queue[i-1];
 
-            
-            finalPosition();
-            Destroy(aux);
+            aux.GetComponent<FABRICIANPC>().setDestination(dir);
         }
-
-
-
-
-       
         updateNpcPosition();
         spawnNpc();
     }
@@ -85,14 +75,5 @@ public class NpcSpawner : MonoBehaviour
         queue[2].GetComponent<FABRICIANPC>().updateTarget(SpawnPoint3);
         queue[3].GetComponent<FABRICIANPC>().updateTarget(SpawnPoint4);
 
-       
-
-    }
-    IEnumerator Fade()
-    {
-        GetComponent<FABRICIANPC>().updateTarget(SpawnPoint3);
-    
-        
-        yield return null; 
     }
 }
