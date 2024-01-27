@@ -19,7 +19,11 @@ public class PlayerController : MonoBehaviour
     private float maxCapacity = 100.0f;
 
     public Image barFiller;
+
+    // Modificadores de penalizadores, bonificadores y velocidad de la barra de aforo
     private float fillSpeed;
+    public float[] bonif = { 0.13f, 0.0f, 9, 4, 6, 7, 9, 10 };
+    public float[] pena;
 
 
     // Start is called before the first frame update
@@ -30,6 +34,8 @@ public class PlayerController : MonoBehaviour
       
         currentCapacity = 0;
         fillSpeed = 2;
+
+
     }
 
     // Update is called once per frame
@@ -46,6 +52,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Pressed left-click.");
                 // Deja pasar al npc
                 npcSpawner.removeFromQueue(0);
+                currentCapacity -= 0.13f;
             }
 
             else if (Input.GetMouseButtonDown(1))

@@ -38,7 +38,10 @@ public class FABRICIANPC : MonoBehaviour
         position = gameObject.transform.position;
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
-        rbSprite = rb.GetComponent<SpriteRenderer>(); 
+        rbSprite = rb.GetComponent<SpriteRenderer>();
+
+        // Cargamos provisional un sprite de prueba
+        rbSprite.sprite = Resources.Load<Sprite>("Sprites/Oruga/Cuerpo");
     }
 
     // Update is called once per frame
@@ -64,8 +67,8 @@ public class FABRICIANPC : MonoBehaviour
 
         // Aplicamos una máscara de color a los personajes y los movemos un layer por detrás para que no se superpongan
         byte rgbValue = 100;
-        GetComponent<SpriteRenderer>().color = new Color32(rgbValue, rgbValue, rgbValue, 255);
-        GetComponent<SpriteRenderer>().sortingOrder = 0;
+        rbSprite.color = new Color32(rgbValue, rgbValue, rgbValue, 255);
+        rbSprite.sortingOrder = 0;
 
         if (dir == 0)
         {
