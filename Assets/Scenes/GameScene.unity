@@ -1031,6 +1031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30cccd1d17a22b44395f18ac3d3fda56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 480113592}
   minuteHand: {fileID: 629847965}
   hourHand: {fileID: 752538994}
 --- !u!1 &1309613757

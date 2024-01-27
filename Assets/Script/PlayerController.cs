@@ -74,4 +74,9 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
     }
+
+    public void increaseSpeed()
+    {
+        fillSpeed = fillSpeed * 1.2f;
+    }
 }

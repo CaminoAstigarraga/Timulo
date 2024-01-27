@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class Clock : MonoBehaviour
 {
+    // Referencia al controlador del jugador
+    public GameObject playerController;
+
     // Sprites del reloj
     public Image minuteHand;
     public Image hourHand;
@@ -20,6 +23,7 @@ public class Clock : MonoBehaviour
     void Start()
     {
         isTimer = true;
+        InvokeRepeating("accelerateFiller", 30.0f, 30.0f);
     }
 
     // Update is called once per frame
@@ -43,5 +47,10 @@ public class Clock : MonoBehaviour
 
         int minutes = Mathf.FloorToInt(timer);
         minuteHand.transform.localEulerAngles = new Vector3(0, 0, timer / 30 * (-360.0f));
+    }
+
+    private void accelerateFiller()
+    {
+        playerController.GetComponent<PlayerController>().increaseSpeed();
     }
 }
