@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NopIddle_10_0: -1941631351823647163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

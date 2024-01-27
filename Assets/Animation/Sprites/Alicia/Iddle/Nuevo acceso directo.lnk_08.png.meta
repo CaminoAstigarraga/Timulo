@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Nuevo acceso directo.lnk_08_0: -5826319838056070580
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
