@@ -18,43 +18,21 @@ public class Alicia : MonoBehaviour
         aliceAnimator = GetComponent<Animator>(); 
     }
     
-   public void aliciaYesTrue()
+   public IEnumerator AliciaYes()
     {
-        Debug.Log("asd");
-        aliceAnimator.SetBool("YesPass", true);
-        /*aliciaAudios.PlayOneShot(audioYes); 
+        aliciaAudios.PlayOneShot(audioYes); 
         aliceAnimator.SetBool("YesPass", true);
         yield return new WaitForSeconds(this.aliceAnimator.GetCurrentAnimatorStateInfo(0).length);
-        Debug.Log(this.aliceAnimator.GetCurrentAnimatorStateInfo(0).length);
-        aliceAnimator.SetBool("YesPass", false); */
-
+        aliceAnimator.SetBool("YesPass", false); 
+      
     }
-
-    public void aliciaYesFalse()
+    
+   public IEnumerator AliciaNo()
     {
-        aliceAnimator.SetBool("YesPass", false);
-        /*aliciaAudios.PlayOneShot(audioYes); 
-        aliceAnimator.SetBool("YesPass", true);
-        yield return new WaitForSeconds(this.aliceAnimator.GetCurrentAnimatorStateInfo(0).length);
-        Debug.Log(this.aliceAnimator.GetCurrentAnimatorStateInfo(0).length);
-        aliceAnimator.SetBool("YesPass", false); */
-
-    }
-
-    public void aliciaNoTrue()
-    {
-
-        aliceAnimator.SetBool("NoPass", true);
-        /*aliciaAudios.PlayOneShot(audioNo); 
+        aliciaAudios.PlayOneShot(audioNo); 
         aliceAnimator.SetBool("NoPass", true);
         yield return new WaitForSeconds(this.aliceAnimator.GetCurrentAnimatorStateInfo(0).length);
-        Debug.Log(this.aliceAnimator.GetCurrentAnimatorStateInfo(0).length);
-        aliceAnimator.SetBool("NoPass", false);*/
-    }
-
-    public void aliciaNoFalse()
-    {
         aliceAnimator.SetBool("NoPass", false);
     }
-
+  
 }

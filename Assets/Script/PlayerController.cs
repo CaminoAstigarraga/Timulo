@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
                 npcSpawner.removeFromQueue(0);
                 currentCapacity -= bonus[timerValues] * 100;
 
-                //StartCoroutine(alicia.GetComponent<Alicia>().AliciaYes());
+                StartCoroutine(alicia.GetComponent<Alicia>().AliciaYes());
                 
             }
 
@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
                 npcSpawner.removeFromQueue(1);
                 currentCapacity += pena[timerValues] * 100;
 
-                //StartCoroutine(alicia.GetComponent<Alicia>().AliciaNo());
+                StartCoroutine(alicia.GetComponent<Alicia>().AliciaNo());
             }
 
             //if (Input.GetMouseButtonDown(2)) Debug.Log("Pressed middle-click.");
