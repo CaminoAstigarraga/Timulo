@@ -2274,6 +2274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'AliciaTesteoNpc '
       objectReference: {fileID: 0}
+    - target: {fileID: 2267949550747014359, guid: 1a3a843f37df17c44b16488d2163200a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7289656783272905638, guid: 1a3a843f37df17c44b16488d2163200a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.45
