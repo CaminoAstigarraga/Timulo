@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -67,5 +68,10 @@ public class PlayerController : MonoBehaviour
         // Rellenamos la barra de aforo progresivamente según pasa el tiempo. Se podría alterar la velocidad conforme avance el tiempo
         currentCapacity += Time.deltaTime * fillSpeed;
         barFiller.fillAmount = (float) currentCapacity / (float) maxCapacity;
+
+        if(barFiller.fillAmount == 1)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }

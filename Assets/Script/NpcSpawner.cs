@@ -8,7 +8,6 @@ public class NpcSpawner : MonoBehaviour
     //Referencia al controlador del jugador
     public GameObject playerController;
 
-
     public GameObject plantillaFabriciaNpc;
 
     List<GameObject> queue;
