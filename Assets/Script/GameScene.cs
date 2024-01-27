@@ -9,17 +9,22 @@ public class GameScene : MonoBehaviour
     void Start()
     {
         ControlPanel();
+       
+
     }
     void ControlPanel()
     {
         if (ControlsPanel != null)
         {
             ControlsPanel.SetActive(true);
+            Time.timeScale = 0;
         }
+       
     }
    public void ControlPanelOff()
     {
         ControlsPanel.SetActive(false);
+        Time.timeScale = 1;
     }
     
 }
