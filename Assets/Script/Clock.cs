@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; 
 
 public class Clock : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class Clock : MonoBehaviour
 
     // variables para el reloj
     private bool isTimer = false;
-    private float timer = 0.0f;
+    public float timer = 0.0f;
     private float timerSpeed = 1.0f;
 
 
@@ -38,7 +39,10 @@ public class Clock : MonoBehaviour
         // Cuando el reloj llega al límite del tiempo
         if (timer > 180)
         {
-            timer = 0;
+          //  timer = 0;
+
+            SceneManager.LoadScene("Win");
+
         }
 
         // Giramos las manecillas del reloj según los 30 segundos del minutero y las 7 horas que representan los 3 minutos 30 segundos

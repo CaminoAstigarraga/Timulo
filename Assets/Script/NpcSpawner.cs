@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NpcSpawner : MonoBehaviour
 {
-
+    
     //Referencia al controlador del jugador
     public GameObject playerController;
 
@@ -18,10 +18,13 @@ public class NpcSpawner : MonoBehaviour
     private Vector3 SpawnPoint2 = new Vector3(-7.0f, -1.51f, 0.0f);
     private Vector3 SpawnPoint3 = new Vector3(-3.0f, -1.51f, 0.0f);
     private Vector3 SpawnPoint4 = new Vector3(1.0f, -1.51f, 0.0f);
+    
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        
         // Inicializamos la lista de los 4 npcs,
         queue = new List<GameObject>();
 
@@ -40,6 +43,8 @@ public class NpcSpawner : MonoBehaviour
         GameObject fourthNpc = Instantiate(plantillaFabriciaNpc, SpawnPoint4, Quaternion.identity);
         queue.Add(fourthNpc);
         fourthNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint3, SpawnPoint4);
+
+        
     }
 
     // Creamos un npc, le pasamos su ubicación inicial, 
@@ -50,14 +55,26 @@ public class NpcSpawner : MonoBehaviour
         newNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint0, SpawnPoint1);
     }
 
+    void finalPosition()
+    {
+    
+    }
     public void removeFromQueue()
     {
         GameObject aux = queue[3];
         for (int i = 3; i > 0; i--)
         {
             queue[i] = queue[i-1];
+
+            
+            finalPosition();
+            Destroy(aux);
         }
-        Destroy(aux);
+
+
+
+
+       
         updateNpcPosition();
         spawnNpc();
     }
@@ -67,5 +84,15 @@ public class NpcSpawner : MonoBehaviour
         queue[1].GetComponent<FABRICIANPC>().updateTarget(SpawnPoint2);
         queue[2].GetComponent<FABRICIANPC>().updateTarget(SpawnPoint3);
         queue[3].GetComponent<FABRICIANPC>().updateTarget(SpawnPoint4);
+
+       
+
+    }
+    IEnumerator Fade()
+    {
+        GetComponent<FABRICIANPC>().updateTarget(SpawnPoint3);
+    
+        
+        yield return null; 
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Threading;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         lockInput = true;
         currentLockInputTime = 0;
-
+      
         currentCapacity = 0;
         fillSpeed = 2;
     }
@@ -35,7 +36,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        // Comprobamos si el jugador puede interactu
+        // Comprobamos si el jugador puede interactuar
         if (!lockInput)
         {
             currentLockInputTime = 0.0f;
@@ -73,6 +74,8 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+       
+      
     }
 
     public void increaseSpeed()
