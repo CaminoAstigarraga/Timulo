@@ -15,16 +15,8 @@ public class GameScene : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            contractGame.SetActive(true);
-            Time.timeScale = 0; 
-        }
-        if (Input.GetMouseButtonDown(1))
-        {
-            contractGame.SetActive(false);
-            Time.timeScale = 1; 
-        }
+      
+       
 
     }
     void ControlPanel()
@@ -36,10 +28,18 @@ public class GameScene : MonoBehaviour
         }
        
     }
+ 
+    public void ContractOff()
+    {
+        contractGame.SetActive(false); 
+        Time.timeScale = 1;
+
+    }
    public void ControlPanelOff()
     {
         ControlsPanel.SetActive(false);
-        Time.timeScale = 1;
+        contractGame.SetActive(true); 
+        Time.timeScale = 0;
     }
 
     
