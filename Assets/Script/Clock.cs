@@ -40,7 +40,6 @@ public class Clock : MonoBehaviour
         // Cuando el reloj llega al límite del tiempo
         if (timer > 180)
         {
-          //  timer = 0;
 
             SceneManager.LoadScene("Win");
 
@@ -52,6 +51,7 @@ public class Clock : MonoBehaviour
 
         int minutes = Mathf.FloorToInt(timer);
         minuteHand.transform.localEulerAngles = new Vector3(0, 0, timer / 30 * (-360.0f));
+
     }
 
     private void accelerateFiller()

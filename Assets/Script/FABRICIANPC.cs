@@ -78,7 +78,7 @@ public class FABRICIANPC : MonoBehaviour
         else
         {
             target = rejectedFinalTarget;
-
+            rbSprite.flipX = true;
         }
     }
 

@@ -21,9 +21,12 @@ public class PlayerController : MonoBehaviour
     public Image barFiller;
 
     // Modificadores de penalizadores, bonificadores y velocidad de la barra de aforo
-    private float fillSpeed;
-    public float[] bonif = { 0.13f, 0.0f, 9, 4, 6, 7, 9, 10 };
-    public float[] pena;
+    private float[] fillSpeed = { 7.69f, 9.1f, 11.11f, 14.28f, 16.66f, 33.33f };
+    private float[] bonus = { 0.13f, 0.11f, 0.08f, 0.07f, 0.06f, 0.05f };
+    private float[] pena = { 0.14f, 0.16f, 0.18f, 0.20f, 0.21f, 0.25f };
+
+    // Entero que cambia cada 30 segundos para moverse por los arrays de la barra de aforo;
+    public int timerValues = 0;
 
 
     // Start is called before the first frame update
@@ -33,8 +36,6 @@ public class PlayerController : MonoBehaviour
         currentLockInputTime = 0;
       
         currentCapacity = 0;
-        fillSpeed = 2;
-
 
     }
 
@@ -52,7 +53,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Pressed left-click.");
                 // Deja pasar al npc
                 npcSpawner.removeFromQueue(0);
-                currentCapacity -= 0.13f;
+                currentCapacity -= bonus[timerValues] * 100;
             }
 
             else if (Input.GetMouseButtonDown(1))
@@ -61,6 +62,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Pressed right-click.");
                 // Obliga al Npc a volver
                 npcSpawner.removeFromQueue(1);
+                currentCapacity += pena[timerValues] * 100;
             }
 
             //if (Input.GetMouseButtonDown(2)) Debug.Log("Pressed middle-click.");
@@ -76,7 +78,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Rellenamos la barra de aforo progresivamente según pasa el tiempo. Se podría alterar la velocidad conforme avance el tiempo
-        currentCapacity += Time.deltaTime * fillSpeed;
+        currentCapacity += Time.deltaTime * fillSpeed[timerValues];
         barFiller.fillAmount = (float) currentCapacity / (float) maxCapacity;
 
         if(barFiller.fillAmount == 1)
@@ -89,6 +91,6 @@ public class PlayerController : MonoBehaviour
 
     public void increaseSpeed()
     {
-        fillSpeed = fillSpeed * 1.2f;
+        timerValues++;
     }
 }
