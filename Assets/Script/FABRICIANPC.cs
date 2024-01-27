@@ -20,9 +20,9 @@ public class FABRICIANPC : MonoBehaviour
     private Vector3 aceptedFinalTarget = new Vector3(12.0f, -1.51f, 0);
 
 
-    Rigidbody2D rb;
-    public float velocity;
-    SpriteRenderer rbSprite;
+    private Rigidbody2D rb;
+    private float velocity = 5.0f;
+    private SpriteRenderer rbSprite;
     private float minDistance = 0.2f;
 
     // Asignamos la posición inicial
@@ -41,7 +41,7 @@ public class FABRICIANPC : MonoBehaviour
         rbSprite = rb.GetComponent<SpriteRenderer>();
 
         // Cargamos provisional un sprite de prueba
-        rbSprite.sprite = Resources.Load<Sprite>("Sprites/Oruga/Cuerpo");
+        //rbSprite.sprite = Resources.Load<Sprite>("Sprites/Oruga/Cuerpo");
     }
 
     // Update is called once per frame
@@ -51,6 +51,7 @@ public class FABRICIANPC : MonoBehaviour
         {
             float step = velocity * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, target, step);
+            Debug.Log(velocity);
         }
 
     }
