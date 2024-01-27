@@ -6,7 +6,10 @@ using UnityEngine;
 public class Alicia : MonoBehaviour
 {
     public Animator aliceAnimator;
+    public AudioSource aliciaAudios;
 
+    public AudioClip audioYes;
+    public AudioClip audioNo; 
     
 
     // Start is called before the first frame update
@@ -26,6 +29,7 @@ public class Alicia : MonoBehaviour
     }
    public IEnumerator AliciaYes()
     {
+        aliciaAudios.PlayOneShot(audioYes); 
         aliceAnimator.SetBool("YesPass", true);
         yield return new WaitForEndOfFrame();
         aliceAnimator.SetBool("YesPass", false); 
@@ -34,6 +38,7 @@ public class Alicia : MonoBehaviour
     
    public IEnumerator AliciaNo()
     {
+        aliciaAudios.PlayOneShot(audioNo); 
         aliceAnimator.SetBool("NoPass", true);
         yield return new WaitForSeconds(2);
         aliceAnimator.SetBool("NoPass", false);

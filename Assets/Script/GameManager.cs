@@ -10,6 +10,9 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public AudioClip[] Effects;
+    private AudioSource reproductor;
+
 
     public static GameManager Instance { get; private set; }
 
@@ -36,15 +39,16 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
 
-
       
+    
+
     }
  
     
     // Update is called once per frame
     void Update()
     {
-      
+   
     }
 
 
