@@ -32,7 +32,7 @@ public class Clock : MonoBehaviour
     private void displayTime()
     {
         // Cuando el reloj llega al límite del tiempo
-        if (timer > 210)
+        if (timer > 180)
         {
             timer = 0;
         }

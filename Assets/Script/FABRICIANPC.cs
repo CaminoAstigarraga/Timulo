@@ -4,21 +4,34 @@ using UnityEngine;
 
 public class FABRICIANPC : MonoBehaviour
 {
-    private Vector2 target;
-    private Vector2 position;
+
+    // Atributos del Npc
+    private int type;
+    private int deck;
+    private int hat;
+    private int glasses;
+
+
+    private Vector3 target;
+    private Vector3 position;
     private Camera cam; 
 
 
     Rigidbody2D rb;
     public float velocity;
     SpriteRenderer rbSprite;
-    public float mindistance = 0.2f; 
+    private float minDistance = 0.2f;
+
+    // Asignamos la posición inicial
+    public void setInitialPosition(Vector3 currentPos, Vector3 nextTarget)
+    {
+        position = currentPos;
+        target = nextTarget;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        target = new Vector2(5.21f, -1.51f); 
-
         position = gameObject.transform.position;
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
@@ -28,23 +41,17 @@ public class FABRICIANPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float step = velocity * Time.deltaTime;
-
-        if (Vector2.Distance(transform.position, target)> mindistance)
+        if (Vector2.Distance(transform.position, target) > minDistance)
         {
- transform.position = Vector2.MoveTowards(transform.position, target, step);
+            float step = velocity * Time.deltaTime;
+            transform.position = Vector2.MoveTowards(transform.position, target, step);
         }
 
-      
-
-
-
-       
-
-    
-
-       
     }
 
-    
+    public void updateTarget(Vector3 newTarget)
+    {
+        target = newTarget;
+    }
+
 }
