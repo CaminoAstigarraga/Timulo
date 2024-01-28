@@ -24,7 +24,7 @@ public class Clock : MonoBehaviour
     void Start()
     {
         isTimer = true;
-        InvokeRepeating("accelerateFiller", 30.0f, 30.0f);
+        InvokeRepeating("timeAdvance", 0.0f, 30.0f);
     }
 
     // Update is called once per frame
@@ -54,8 +54,10 @@ public class Clock : MonoBehaviour
 
     }
 
-    private void accelerateFiller()
+    private void timeAdvance()
     {
+        playerController.GetComponent<PlayerController>().addProhibition();
+
         playerController.GetComponent<PlayerController>().increaseSpeed();
     }
 }

@@ -30,8 +30,9 @@ public class PlayerController : MonoBehaviour
     private float[] pena = { 0.14f, 0.16f, 0.18f, 0.20f, 0.21f, 0.25f };
 
     // Entero que cambia cada 30 segundos para moverse por los arrays de la barra de aforo;
-    public int timerValues = 0;
+    private int timerValues = -1;
 
+    private List<int[]> activeProhibitions;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +41,8 @@ public class PlayerController : MonoBehaviour
         currentLockInputTime = 0.9f;
       
         currentCapacity = 0;
+
+        activeProhibitions = new List<int[]>();
 
     }
 
@@ -54,10 +57,10 @@ public class PlayerController : MonoBehaviour
             currentLockInputTime = 0.0f;
             if (Input.GetMouseButtonDown(0))
             {
+                checkProhibitions(npcSpawner.GetComponent<NpcSpawner>().getCurrentInQueue(), true);
                 lockInput = true;
                 // Deja pasar al npc
                 npcSpawner.removeFromQueue(0);
-                currentCapacity -= bonus[timerValues] * 100;
 
                 StartCoroutine(alicia.GetComponent<Alicia>().AliciaYes());
                 
@@ -65,10 +68,10 @@ public class PlayerController : MonoBehaviour
 
             else if (Input.GetMouseButtonDown(1))
             {
+                checkProhibitions(npcSpawner.GetComponent<NpcSpawner>().getCurrentInQueue(), false);
                 lockInput = true;
                 // Obliga al Npc a volver
                 npcSpawner.removeFromQueue(1);
-                currentCapacity += pena[timerValues] * 100;
 
                 StartCoroutine(alicia.GetComponent<Alicia>().AliciaNo());
             }
@@ -98,8 +101,36 @@ public class PlayerController : MonoBehaviour
       
     }
 
+    private void checkProhibitions(GameObject currentInQueue, bool pass)
+    {
+        foreach(int[] p in activeProhibitions)
+        {
+            if ((int) char.GetNumericValue(currentInQueue.name[p[0]]) == p[1])
+            {
+                if (pass)
+                {
+                    currentCapacity += pena[timerValues] * 100;
+                }
+                else
+                {
+                    currentCapacity -= bonus[timerValues] * 100;
+                }
+                return;
+            }   
+        }
+        if(pass)
+            currentCapacity -= bonus[timerValues] * 100;
+        else
+            currentCapacity += pena[timerValues] * 100;
+    }
+
     public void increaseSpeed()
     {
         timerValues++;
+    }
+
+    public void addProhibition()
+    {
+        activeProhibitions.Add(new int[] { 3, 1 });
     }
 }

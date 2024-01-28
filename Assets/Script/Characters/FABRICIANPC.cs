@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class FABRICIANPC : MonoBehaviour
 {
@@ -40,9 +41,14 @@ public class FABRICIANPC : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rbSprite = rb.GetComponent<SpriteRenderer>();
 
-        // Cargamos provisional un sprite de prueba
-        //rbSprite.sprite = Resources.Load<Sprite>("Sprites/Oruga/Cuerpo");
-    }
+        // Propiedades
+        string gOName = gameObject.name;
+        type = (int) char.GetNumericValue(gOName[0]);
+        deck = (int)char.GetNumericValue(gOName[1]);
+        hat = (int)char.GetNumericValue(gOName[2]);
+        glasses = (int)char.GetNumericValue(gOName[3]);
+
+}
 
     // Update is called once per frame
     void Update()
@@ -79,6 +85,7 @@ public class FABRICIANPC : MonoBehaviour
         {
             target = rejectedFinalTarget;
             rbSprite.flipX = true;
+            rbSprite.sortingOrder = 0;
         }
     }
 

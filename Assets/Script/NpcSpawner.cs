@@ -62,7 +62,6 @@ public class NpcSpawner : MonoBehaviour
     void spawnNpc()
     {
         string aux = "Prefabs/" + generateRandomCharacter();
-        Debug.Log(aux);
         GameObject newNpc = Instantiate((GameObject)Resources.Load(aux), SpawnPoint0, Quaternion.identity);
         queue[0] = newNpc;
         newNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint0, SpawnPoint1);
@@ -89,5 +88,10 @@ public class NpcSpawner : MonoBehaviour
         queue[2].GetComponent<FABRICIANPC>().updateTarget(SpawnPoint3);
         queue[3].GetComponent<FABRICIANPC>().updateTarget(SpawnPoint4);
 
+    }
+
+    public GameObject getCurrentInQueue()
+    {
+        return queue[3];
     }
 }
