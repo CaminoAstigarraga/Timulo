@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CARTEL PROHIBICIONES_0: -6777118175240373255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
