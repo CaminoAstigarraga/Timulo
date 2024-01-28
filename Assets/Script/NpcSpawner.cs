@@ -19,7 +19,13 @@ public class NpcSpawner : MonoBehaviour
     private Vector3 SpawnPoint3 = new Vector3(-3.0f, -1.51f, 0.0f);
     private Vector3 SpawnPoint4 = new Vector3(1.0f, -1.51f, 0.0f);
     
-    
+    private string generateRandomCharacter()
+    {
+        string id = "000";
+        // glasses
+        
+        return id + Random.Range(0, 2);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -28,19 +34,20 @@ public class NpcSpawner : MonoBehaviour
         // Inicializamos la lista de los 4 npcs,
         queue = new List<GameObject>();
 
-        GameObject firstNpc = Instantiate(plantillaFabriciaNpc, SpawnPoint1, Quaternion.identity);
+        
+        GameObject firstNpc = Instantiate((GameObject)Resources.Load("prefabs/" + generateRandomCharacter()), SpawnPoint1, Quaternion.identity);
         queue.Add(firstNpc);
         firstNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint0, SpawnPoint1);
 
-        GameObject secondNpc = Instantiate(plantillaFabriciaNpc, SpawnPoint2, Quaternion.identity);
+        GameObject secondNpc = Instantiate((GameObject)Resources.Load("prefabs/" + generateRandomCharacter()), SpawnPoint2, Quaternion.identity);
         queue.Add(secondNpc);
         secondNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint1, SpawnPoint2);
 
-        GameObject thirdNpc = Instantiate(plantillaFabriciaNpc, SpawnPoint3, Quaternion.identity);
+        GameObject thirdNpc = Instantiate((GameObject)Resources.Load("prefabs/" + generateRandomCharacter()), SpawnPoint3, Quaternion.identity);
         queue.Add(thirdNpc);
         thirdNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint2, SpawnPoint3);
 
-        GameObject fourthNpc = Instantiate(plantillaFabriciaNpc, SpawnPoint4, Quaternion.identity);
+        GameObject fourthNpc = Instantiate((GameObject)Resources.Load("prefabs/" + generateRandomCharacter()), SpawnPoint4, Quaternion.identity);
         queue.Add(fourthNpc);
         fourthNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint3, SpawnPoint4);
 
