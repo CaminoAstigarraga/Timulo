@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 {
     public NpcSpawner npcSpawner;
 
+    public List<GameObject> prohibitionPanels;
+
     public Alicia alicia;
 
     private bool lockInput;
@@ -163,6 +165,7 @@ public class PlayerController : MonoBehaviour
                 break;
             }
         }
+        prohibitionPanels[0].SetActive(true);
         activeProhibitions.Add(prohibition);
     }
 }

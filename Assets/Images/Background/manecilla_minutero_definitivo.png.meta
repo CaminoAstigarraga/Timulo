@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2a87138c2c1e47349817b86ee2657080
+guid: 225c9d810dbffc94988a3a03757d8cfe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4004135656419625115
-    second: Manecilla_corta_dos_0
+      213: -6013169852942752312
+    second: manecilla_minutero_definitivo_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manecilla_corta_dos_0
+      name: manecilla_minutero_definitivo_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 60
-        width: 42
-        height: 45
+        x: 247
+        y: 230
+        width: 35
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b980e592a2c819730800000000000000
-      internalID: 4004135656419625115
+      spriteID: 8c5624db0edec8ca0800000000000000
+      internalID: -6013169852942752312
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Manecilla_corta_dos_0: 4004135656419625115
+      manecilla_minutero_definitivo_0: -6013169852942752312
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5996ebf78598f4c4381c2a593817c4d3
+guid: 267bfba765f083e4f946033d14acb6bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4553222269686218557
-    second: Manecilla_larga_Uno_0
+      213: 2670882142253418411
+    second: marco_numbers_definitivo_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manecilla_larga_Uno_0
+      name: marco_numbers_definitivo_0
       rect:
         serializedVersion: 2
-        x: 215
-        y: 69
-        width: 36
-        height: 78
+        x: 32
+        y: 26
+        width: 465
+        height: 478
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c084ff3874bfc0c0800000000000000
-      internalID: -4553222269686218557
+      spriteID: ba703fd4821e01520800000000000000
+      internalID: 2670882142253418411
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Manecilla_larga_Uno_0: -4553222269686218557
+      marco_numbers_definitivo_0: 2670882142253418411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
