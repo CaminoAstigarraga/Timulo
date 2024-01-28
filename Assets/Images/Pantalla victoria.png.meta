@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pantalla victoria_0: 2117901399755792353
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

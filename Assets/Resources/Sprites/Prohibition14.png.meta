@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d8bdbbb72394d6943801c8489521d4a3
+guid: 8e4bd42e8b1c6f54fb22b378acddd1ca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2700461244435639622
-    second: Pantalla controles_0
+      213: -7189293627178196309
+    second: NO CARTA OROS_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pantalla controles_0
+      name: NO CARTA OROS_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        y: 3
+        width: 200
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab254bb4ec8068ad0800000000000000
-      internalID: -2700461244435639622
+      spriteID: ba2601e598f7a3c90800000000000000
+      internalID: -7189293627178196309
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pantalla controles_0: -2700461244435639622
+      NO CARTA OROS_0: -7189293627178196309
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

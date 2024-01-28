@@ -31,13 +31,10 @@ public class NpcSpawner : MonoBehaviour
             id += 0;
 
         //hat
-        id += 0;
+        id += Random.Range(0, 4);
 
         // glasses
-        if (id.Equals("100"))
-            id += 0;
-        else
-            id += Random.Range(0, 2);
+        id += Random.Range(0, 2);
 
         return id;
     }

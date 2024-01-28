@@ -846,13 +846,13 @@ GameObject:
   m_Component:
   - component: {fileID: 454675867}
   - component: {fileID: 454675868}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Control Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &454675867
 Transform:
   m_ObjectHideFlags: 0
@@ -1022,11 +1022,11 @@ MonoBehaviour:
   npcSpawner: {fileID: 32707852}
   prohibitionPanels:
   - {fileID: 1970785663}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1963375448}
+  - {fileID: 1203835825}
+  - {fileID: 1954495392}
+  - {fileID: 724108042}
+  - {fileID: 149224712}
   alicia: {fileID: 752611933}
   barFiller: {fileID: 1514329322}
   greenLight: {fileID: 971878503}
@@ -4062,12 +4062,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1201550876}
-  - {fileID: 454675867}
-  - {fileID: 2044628192}
   - {fileID: 1163706127}
   - {fileID: 957226622}
   - {fileID: 1184862529}
+  - {fileID: 1201550876}
+  - {fileID: 2044628192}
+  - {fileID: 454675867}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

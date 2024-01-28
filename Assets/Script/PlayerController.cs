@@ -27,9 +27,9 @@ public class PlayerController : MonoBehaviour
     public GameObject greenLight;
 
     // Modificadores de penalizadores, bonificadores y velocidad de la barra de aforo
-    private float[] fillSpeed = { 7.69f, 9.1f, 11.11f, 14.28f, 16.66f, 33.33f };
-    private float[] bonus = { 0.13f, 0.11f, 0.08f, 0.07f, 0.06f, 0.05f };
-    private float[] pena = { 0.14f, 0.16f, 0.18f, 0.20f, 0.21f, 0.25f };
+    private float[] fillSpeed = { 7.69f, 9.1f, 11.11f, 14.28f, 16.66f, 25.0f };
+    private float[] bonus = { 0.15f, 0.15f, 0.16f, 0.20f, 0.20f, 0.28f };
+    private float[] pena = { 0.1f, 0.1f, 0.1f, 0.15f, 0.18f, 0.22f };
 
     // Entero que cambia cada 30 segundos para moverse por los arrays de la barra de aforo;
     private int timerValues = -1;
@@ -117,6 +117,8 @@ public class PlayerController : MonoBehaviour
                 {
                     currentCapacity -= bonus[timerValues] * 100;
                 }
+                if (currentCapacity < 0)
+                    currentCapacity = 0.0f;
                 return;
             }   
         }
@@ -124,6 +126,8 @@ public class PlayerController : MonoBehaviour
             currentCapacity -= bonus[timerValues] * 100;
         else
             currentCapacity += pena[timerValues] * 100;
+        if (currentCapacity < 0)
+            currentCapacity = 0.0f;
     }
 
     public void increaseSpeed()
@@ -156,7 +160,6 @@ public class PlayerController : MonoBehaviour
                 break;
         }
         int[] prohibition = new int[] { position, value };
-        Debug.Log(position +"" + value);
         foreach (int[] item in activeProhibitions)
         {
             if (prohibition == item)
