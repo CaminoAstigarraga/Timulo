@@ -16,8 +16,8 @@ public class FABRICIANPC : MonoBehaviour
     private Vector3 position;
     private Camera cam;
 
-    private Vector3 rejectedFinalTarget = new Vector3(-17.0f, -1.51f, 0);
-    private Vector3 aceptedFinalTarget = new Vector3(12.0f, -1.51f, 0);
+    private Vector3 rejectedFinalTarget = new Vector3(-23.0f, -1.51f, 0);
+    private Vector3 aceptedFinalTarget = new Vector3(16.0f, -1.51f, 0);
 
 
     private Rigidbody2D rb;
