@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 669784c8ab7a93548919ab9db6a07193
+guid: 55a46e08725374c48be2185afc9d0e09
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6973855382640328221
-    second: NO GAFAS_0
+      213: -6777118175240373255
+    second: CARTEL PROHIBICIONES_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NO GAFAS_0
+      name: CARTEL PROHIBICIONES_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3
-        width: 200
-        height: 186
+        x: 144
+        y: 0
+        width: 415
+        height: 948
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e107c28a73e73f90800000000000000
-      internalID: -6973855382640328221
+      spriteID: 9fb34f32de6d2f1a0800000000000000
+      internalID: -6777118175240373255
       vertices: []
       indices: 
       edges: []
