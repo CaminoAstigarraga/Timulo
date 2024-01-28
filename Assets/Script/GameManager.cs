@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public AudioClip[] Effects;
     private AudioSource reproductor;
 
+    public static bool victory = false;
 
     public static GameManager Instance { get; private set; }
 
