@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
 
     public Image barFiller;
 
+    public GameObject greenLight;
+
     // Modificadores de penalizadores, bonificadores y velocidad de la barra de aforo
     private float[] fillSpeed = { 7.69f, 9.1f, 11.11f, 14.28f, 16.66f, 33.33f };
     private float[] bonus = { 0.13f, 0.11f, 0.08f, 0.07f, 0.06f, 0.05f };
@@ -35,7 +37,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         lockInput = true;
-        currentLockInputTime = 0;
+        currentLockInputTime = 0.9f;
       
         currentCapacity = 0;
 
@@ -48,6 +50,7 @@ public class PlayerController : MonoBehaviour
         // Comprobamos si el jugador puede interactuar
         if (!lockInput)
         {
+            greenLight.GetComponent<SpriteRenderer>().color = Color.white;
             currentLockInputTime = 0.0f;
             if (Input.GetMouseButtonDown(0))
             {
@@ -76,6 +79,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            greenLight.GetComponent<SpriteRenderer>().color = Color.red;
             currentLockInputTime += Time.deltaTime;
             if (currentLockInputTime >= lockInputTime)
             {
