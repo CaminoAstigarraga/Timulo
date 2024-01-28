@@ -10,6 +10,8 @@ public class Clock : MonoBehaviour
     // Referencia al controlador del jugador
     public GameObject playerController;
 
+    public Queen queen;
+
     // Sprites del reloj
     public Image minuteHand;
     public Image hourHand;
@@ -56,6 +58,8 @@ public class Clock : MonoBehaviour
 
     private void timeAdvance()
     {
+        queen.GetComponent<Queen>().peepIn();
+
         playerController.GetComponent<PlayerController>().addProhibition();
 
         playerController.GetComponent<PlayerController>().increaseSpeed();
