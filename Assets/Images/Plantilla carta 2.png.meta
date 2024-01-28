@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2b784513c7bf401419842ac5001c6a81
+guid: ee02c92e378071046b3fc2dd997c93da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5491546242612622314
-    second: Humo1_0
+      213: -5455671081155850674
+    second: Plantilla carta 2_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Humo1_0
+      name: Plantilla carta 2_0
       rect:
         serializedVersion: 2
-        x: 819
-        y: 986
-        width: 40
-        height: 51
+        x: 0
+        y: 0
+        width: 800
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61c817da9cb1ac3b0800000000000000
-      internalID: -5491546242612622314
+      spriteID: e4e855c9e009944b0800000000000000
+      internalID: -5455671081155850674
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Humo1_0: -5491546242612622314
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

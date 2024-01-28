@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f1ad619083b9d464297b190434ac6829
+guid: e0699785151179641ae323e915d59406
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2002607152621329469
-    second: Cuerpo_0
+      213: -7896257890025878119
+    second: NO GORRO MILITAR _0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cuerpo_0
+      name: NO GORRO MILITAR _0
       rect:
         serializedVersion: 2
-        x: 121
-        y: 33
-        width: 759
-        height: 964
+        x: 0
+        y: 3
+        width: 200
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3c96a45890bacb10800000000000000
-      internalID: 2002607152621329469
+      spriteID: 99dc122094bda6290800000000000000
+      internalID: -7896257890025878119
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cuerpo_0: 2002607152621329469
+      NO GORRO MILITAR _0: -7896257890025878119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
