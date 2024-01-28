@@ -8,12 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<<< HEAD:Assets/Prefabs/Alicia .prefab
   - component: {fileID: 6533663349994312678}
   - component: {fileID: 520055010589129495}
   - component: {fileID: 7072139854726619003}
   - component: {fileID: 6416105327334627064}
   m_Layer: 0
   m_Name: 'Alicia '
+========
+  - component: {fileID: 7070949326285914704}
+  - component: {fileID: 4440383468111375424}
+  - component: {fileID: 1835069809980782329}
+  - component: {fileID: 5060867543105941492}
+  - component: {fileID: -4797552266851723967}
+  - component: {fileID: -9222288078819532770}
+  m_Layer: 0
+  m_Name: 0001
+>>>>>>>> 0d5c9902244a66d803948f5ef13eea483048304e:Assets/Resources/Prefabs/0001.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,12 +119,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+<<<<<<<< HEAD:Assets/Prefabs/Alicia .prefab
 --- !u!114 &6416105327334627064
+========
+--- !u!114 &5060867543105941492
+>>>>>>>> 0d5c9902244a66d803948f5ef13eea483048304e:Assets/Resources/Prefabs/0001.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<<< HEAD:Assets/Prefabs/Alicia .prefab
   m_GameObject: {fileID: 2680234166039831101}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -124,3 +140,84 @@ MonoBehaviour:
   aliciaAudios: {fileID: 0}
   audioYes: {fileID: 8300000, guid: 7fb2c5ca0432e1c49bb953c23c6c7c24, type: 3}
   audioNo: {fileID: 8300000, guid: 2cc49059dac213e4c88add708da58757, type: 3}
+========
+  m_GameObject: {fileID: 3588753542063218711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c88f32702e8e9409512de3b46e73f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &-4797552266851723967
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588753542063218711}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &-9222288078819532770
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588753542063218711}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.3, y: 8.88}
+    newSize: {x: 6.3, y: 8.88}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 6.3, y: 8.88}
+  m_EdgeRadius: 0
+>>>>>>>> 0d5c9902244a66d803948f5ef13eea483048304e:Assets/Resources/Prefabs/0001.prefab
