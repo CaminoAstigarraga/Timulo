@@ -8,6 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<<< HEAD:Assets/Script/Prefabs/AliciaTesteoNpc .prefab
   - component: {fileID: 7289656783272905638}
   - component: {fileID: 671671554703282857}
   - component: {fileID: 5966325833026971391}
@@ -16,6 +17,13 @@ GameObject:
   - component: {fileID: 1205292186050976598}
   m_Layer: 0
   m_Name: 'AliciaTesteoNpc '
+========
+  - component: {fileID: 1101824241337029792}
+  - component: {fileID: 1297330289409094472}
+  - component: {fileID: 880882649284557033}
+  m_Layer: 0
+  m_Name: SoldierDiamondsNormal
+>>>>>>>> parent of 6bacc29 (Begining random characters generation):Assets/Prefabs/NPC/Soldiers/Diamond/SoldierDiamondsNormal.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,6 +118,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+<<<<<<<< HEAD:Assets/Script/Prefabs/AliciaTesteoNpc .prefab
 --- !u!114 &3344971091085462160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,3 +205,5 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.16, y: 6.82}
   m_EdgeRadius: 0
+========
+>>>>>>>> parent of 6bacc29 (Begining random characters generation):Assets/Prefabs/NPC/Soldiers/Diamond/SoldierDiamondsNormal.prefab

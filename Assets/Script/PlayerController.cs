@@ -55,7 +55,6 @@ public class PlayerController : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 lockInput = true;
-                Debug.Log("Pressed left-click.");
                 // Deja pasar al npc
                 npcSpawner.removeFromQueue(0);
                 currentCapacity -= bonus[timerValues] * 100;
@@ -67,7 +66,6 @@ public class PlayerController : MonoBehaviour
             else if (Input.GetMouseButtonDown(1))
             {
                 lockInput = true;
-                Debug.Log("Pressed right-click.");
                 // Obliga al Npc a volver
                 npcSpawner.removeFromQueue(1);
                 currentCapacity += pena[timerValues] * 100;
