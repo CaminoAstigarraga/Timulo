@@ -34,8 +34,8 @@ public class MainMenu : MonoBehaviour
     {
         MenuAudios.clip = audios[0];
 
-        MenuAudios.Play(); 
-        yield return new WaitForSeconds(5)
+        MenuAudios.Play();
+        yield return new WaitForSeconds(5);
 SceneManager.LoadScene("GameScene");
 
     }
