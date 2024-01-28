@@ -22,6 +22,10 @@ public class NpcSpawner : MonoBehaviour
     private string generateRandomCharacter()
     {
         string id = "000";
+
+        //type
+
+
         // glasses
         
         return id + Random.Range(0, 2);
@@ -57,7 +61,7 @@ public class NpcSpawner : MonoBehaviour
     // Creamos un npc, le pasamos su ubicación inicial, 
     void spawnNpc()
     {
-        GameObject newNpc = Instantiate(plantillaFabriciaNpc, SpawnPoint0, Quaternion.identity);
+        GameObject newNpc = Instantiate((GameObject)Resources.Load("prefabs/" + generateRandomCharacter()), SpawnPoint0, Quaternion.identity);
         queue[0] =newNpc;
         newNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint0, SpawnPoint1);
     }
