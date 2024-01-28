@@ -131,6 +131,38 @@ public class PlayerController : MonoBehaviour
 
     public void addProhibition()
     {
-        activeProhibitions.Add(new int[] { 3, 1 });
+        int position;
+        int value;
+
+        position = Random.Range(0, 4);
+        switch (position)
+        {
+            case 0:
+                value = Random.Range(0, 4);
+                break;
+            case 1:
+                value = Random.Range(0, 5);
+                break;
+            case 2:
+                value = Random.Range(0, 4);
+                break;
+            case 3:
+                value = Random.Range(0, 2);
+                break;
+            default:
+                value = 0; 
+                break;
+        }
+        int[] prohibition = new int[] { position, value };
+        Debug.Log(position +"" + value);
+        foreach (int[] item in activeProhibitions)
+        {
+            if (prohibition == item)
+            {
+                addProhibition();
+                break;
+            }
+        }
+        activeProhibitions.Add(prohibition);
     }
 }
