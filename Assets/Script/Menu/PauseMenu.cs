@@ -8,6 +8,16 @@ public class PauseMenu : MonoBehaviour
     [SerializeReference] GameObject pauseMenu;
 
     // Llamado cuando pausamos el juego
+    public void Update()
+    {
+       
+        {
+            if (Input.GetKey(KeyCode.Mouse2))
+            {
+                Pause(); 
+            } 
+        }
+    }
     public void Pause()
     {
         pauseMenu.SetActive(true);

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3e5ea9eda9aa3714f894932398c2348c
+guid: d8bdbbb72394d6943801c8489521d4a3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6615956747382986155
-    second: NO CARTA_0
+      213: -2700461244435639622
+    second: Pantalla controles_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NO CARTA_0
+      name: Pantalla controles_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 3
-        width: 200
-        height: 186
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba59c11eb9990db50800000000000000
-      internalID: 6615956747382986155
+      spriteID: ab254bb4ec8068ad0800000000000000
+      internalID: -2700461244435639622
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      NO CARTA_0: 6615956747382986155
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
