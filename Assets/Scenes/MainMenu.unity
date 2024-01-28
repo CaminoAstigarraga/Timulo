@@ -204,7 +204,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 776642775}
-        m_TargetAssemblyTypeName: Back, Assembly-CSharp
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -1032,6 +1032,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b580182417d8c314e83904fa365f0016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MenuAudios: {fileID: 620256162}
+  audios:
+  - {fileID: 8300000, guid: d91917eef2611674897837accf57159a, type: 3}
 --- !u!1 &819725970
 GameObject:
   m_ObjectHideFlags: 0

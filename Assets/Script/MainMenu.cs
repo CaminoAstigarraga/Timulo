@@ -27,11 +27,18 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("GameScene");
-
+        Startercorrutine(Startercorrutine()); 
 
     }
+    IEnumerator Startercorrutine()
+    {
+        MenuAudios.clip = audios[0];
 
+        MenuAudios.Play(); 
+        yield return new WaitForSeconds(5)
+SceneManager.LoadScene("GameScene");
+
+    }
    
 
     public void Exit()
