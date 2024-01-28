@@ -21,18 +21,18 @@ public class Alicia : MonoBehaviour
    public IEnumerator AliciaYes()
     {
         aliciaAudios.PlayOneShot(audioYes); 
-        aliceAnimator.SetBool("YesPass", true);
-        yield return new WaitForSeconds(this.aliceAnimator.GetCurrentAnimatorStateInfo(0).length);
-        aliceAnimator.SetBool("YesPass", false); 
+        aliceAnimator.SetBool("Pass", true);
+        yield return new WaitForSeconds(0.2f);
+        aliceAnimator.SetBool("Pass", false); 
       
     }
     
    public IEnumerator AliciaNo()
     {
         aliciaAudios.PlayOneShot(audioNo); 
-        aliceAnimator.SetBool("NoPass", true);
-        yield return new WaitForSeconds(this.aliceAnimator.GetCurrentAnimatorStateInfo(0).length);
-        aliceAnimator.SetBool("NoPass", false);
+        aliceAnimator.SetBool("Reject", true);
+        yield return new WaitForSeconds(0.2f);
+        aliceAnimator.SetBool("Reject", false);
     }
   
 }
