@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Barandilla_0: -4802424105055466841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

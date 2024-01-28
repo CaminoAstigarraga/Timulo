@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Iris_rotative_uno_0: 912446555345810437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

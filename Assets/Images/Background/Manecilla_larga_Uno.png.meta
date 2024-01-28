@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Manecilla_larga_Uno_0: -4553222269686218557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

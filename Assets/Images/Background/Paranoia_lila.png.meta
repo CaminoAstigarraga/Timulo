@@ -440,7 +440,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Paranoia_lila_0: -1169088799681775976
+      Paranoia_lila_1: 3439598196886474189
+      Paranoia_lila_10: -1013329485874033835
+      Paranoia_lila_11: -3541780671861609003
+      Paranoia_lila_12: 705584614015213865
+      Paranoia_lila_13: 7416405839572630769
+      Paranoia_lila_2: 1504205073176096472
+      Paranoia_lila_3: 6367452348901017575
+      Paranoia_lila_4: 3016661828448119539
+      Paranoia_lila_5: -6089497175232202416
+      Paranoia_lila_6: -2046581226085750570
+      Paranoia_lila_7: 346854455557066688
+      Paranoia_lila_8: 3752794090095164700
+      Paranoia_lila_9: -805551040818351395
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

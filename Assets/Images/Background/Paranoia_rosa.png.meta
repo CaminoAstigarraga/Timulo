@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Paranoia_rosa_0: 9096112468053747539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

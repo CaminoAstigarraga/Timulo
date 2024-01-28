@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pupila_estatic_0: 2165923974784681786
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

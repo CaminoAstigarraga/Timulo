@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Manecilla_corta_dos_0: 4004135656419625115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

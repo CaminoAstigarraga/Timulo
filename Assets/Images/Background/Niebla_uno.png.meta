@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Niebla_uno_0: -3845262616511702288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
