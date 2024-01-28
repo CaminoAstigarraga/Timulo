@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 88df90a2fa4301d41bd3054cc35d254b
+guid: 3e5ea9eda9aa3714f894932398c2348c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2220628896072064893
-    second: NO CARTA TREBOL_0
+      213: 6615956747382986155
+    second: NO CARTA_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NO CARTA TREBOL_0
+      name: NO CARTA_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38028afc8cdbe21e0800000000000000
-      internalID: -2220628896072064893
+      spriteID: ba59c11eb9990db50800000000000000
+      internalID: 6615956747382986155
       vertices: []
       indices: 
       edges: []
@@ -128,8 +128,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      NO CARTA TREBOL_0: -2220628896072064893
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

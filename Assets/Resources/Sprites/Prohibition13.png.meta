@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 34a0fdcdbb6be3845852352c08792362
+guid: 88df90a2fa4301d41bd3054cc35d254b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 210123953985221173
-    second: NO ORUGA_0
+      213: -2220628896072064893
+    second: NO CARTA TREBOL_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NO ORUGA_0
+      name: NO CARTA TREBOL_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 532f6147f928ae200800000000000000
-      internalID: 210123953985221173
+      spriteID: 38028afc8cdbe21e0800000000000000
+      internalID: -2220628896072064893
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NO ORUGA_0: 210123953985221173
+      NO CARTA TREBOL_0: -2220628896072064893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

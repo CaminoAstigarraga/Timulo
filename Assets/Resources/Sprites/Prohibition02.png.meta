@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d6972294afa14445b55080046ad51e0
+guid: eb1b9f7e265d9214f9a164c4461c4bc6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 746900836013664651
-    second: Pantalla menu_0
+      213: 2243240005004325367
+    second: NO ELEFANTE_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pantalla menu_0
+      name: NO ELEFANTE_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        y: 3
+        width: 200
+        height: 188
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8969056a568d5a00800000000000000
-      internalID: 746900836013664651
+      spriteID: 7f17a3c36e6912f10800000000000000
+      internalID: 2243240005004325367
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pantalla menu_0: 746900836013664651
+      NO ELEFANTE_0: 2243240005004325367
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

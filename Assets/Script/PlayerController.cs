@@ -131,7 +131,7 @@ public class PlayerController : MonoBehaviour
         timerValues++;
     }
 
-    public void addProhibition()
+    public void addProhibition(int currentProhibition)
     {
         int position;
         int value;
@@ -146,10 +146,10 @@ public class PlayerController : MonoBehaviour
                 value = Random.Range(0, 5);
                 break;
             case 2:
-                value = Random.Range(0, 4);
+                value = Random.Range(1, 4);
                 break;
             case 3:
-                value = Random.Range(0, 2);
+                value = 1;
                 break;
             default:
                 value = 0; 
@@ -161,11 +161,12 @@ public class PlayerController : MonoBehaviour
         {
             if (prohibition == item)
             {
-                addProhibition();
+                addProhibition(currentProhibition);
                 break;
             }
         }
-        prohibitionPanels[0].SetActive(true);
+        prohibitionPanels[currentProhibition].SetActive(true);
+        prohibitionPanels[currentProhibition].GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Prohibition" + position + value);
         activeProhibitions.Add(prohibition);
     }
 }

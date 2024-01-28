@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pantalla carta_0: 5256686384067336814
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

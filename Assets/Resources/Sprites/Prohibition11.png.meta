@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d6972294afa14445b55080046ad51e0
+guid: 17b1bff6c5800c340ac75be6e0642858
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 746900836013664651
-    second: Pantalla menu_0
+      213: -4090865530592880445
+    second: NO CARTA CORAZON_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pantalla menu_0
+      name: NO CARTA CORAZON_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        y: 3
+        width: 200
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8969056a568d5a00800000000000000
-      internalID: 746900836013664651
+      spriteID: 3c81f1969735a37c0800000000000000
+      internalID: -4090865530592880445
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pantalla menu_0: 746900836013664651
+      NO CARTA CORAZON_0: -4090865530592880445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

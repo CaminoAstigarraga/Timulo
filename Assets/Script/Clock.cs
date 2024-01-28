@@ -21,6 +21,8 @@ public class Clock : MonoBehaviour
     public float timer = 0.0f;
     private float timerSpeed = 1.0f;
 
+    private int currentProhibition = 0;
+
 
     // Start is called before the first frame update
     void Start()
@@ -58,9 +60,13 @@ public class Clock : MonoBehaviour
 
     private void timeAdvance()
     {
+        if (timer >= 30)
+            currentProhibition++;
+
+
         queen.GetComponent<Queen>().peepIn();
 
-        playerController.GetComponent<PlayerController>().addProhibition();
+        playerController.GetComponent<PlayerController>().addProhibition(currentProhibition);
 
         playerController.GetComponent<PlayerController>().increaseSpeed();
     }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d6972294afa14445b55080046ad51e0
+guid: 731a65533bf764646aadede75d8bc68e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 746900836013664651
-    second: Pantalla menu_0
+      213: 6321617754889047275
+    second: Barra_marco_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pantalla menu_0
+      name: Barra_marco_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 74
+        height: 637
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8969056a568d5a00800000000000000
-      internalID: 746900836013664651
+      spriteID: becc6fdcad5eab750800000000000000
+      internalID: 6321617754889047275
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pantalla menu_0: 746900836013664651
+      Barra_marco_0: 6321617754889047275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
