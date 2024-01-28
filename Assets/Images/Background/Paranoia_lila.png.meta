@@ -1,0 +1,448 @@
+fileFormatVersion: 2
+guid: ec8e2e9a6b22de74fa565bff0a09261d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1169088799681775976
+    second: Paranoia_lila_0
+  - first:
+      213: 3439598196886474189
+    second: Paranoia_lila_1
+  - first:
+      213: 1504205073176096472
+    second: Paranoia_lila_2
+  - first:
+      213: 6367452348901017575
+    second: Paranoia_lila_3
+  - first:
+      213: 3016661828448119539
+    second: Paranoia_lila_4
+  - first:
+      213: -6089497175232202416
+    second: Paranoia_lila_5
+  - first:
+      213: -2046581226085750570
+    second: Paranoia_lila_6
+  - first:
+      213: 346854455557066688
+    second: Paranoia_lila_7
+  - first:
+      213: 3752794090095164700
+    second: Paranoia_lila_8
+  - first:
+      213: -805551040818351395
+    second: Paranoia_lila_9
+  - first:
+      213: -1013329485874033835
+    second: Paranoia_lila_10
+  - first:
+      213: -3541780671861609003
+    second: Paranoia_lila_11
+  - first:
+      213: 705584614015213865
+    second: Paranoia_lila_12
+  - first:
+      213: 7416405839572630769
+    second: Paranoia_lila_13
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Paranoia_lila_0
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 354
+        width: 1322
+        height: 721
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89674184eef86cfe0800000000000000
+      internalID: -1169088799681775976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_1
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1051
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd0e771658ebbf20800000000000000
+      internalID: 3439598196886474189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_2
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 1072
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de60006b8200e410800000000000000
+      internalID: 1504205073176096472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_3
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1032
+        width: 87
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7c874dc2cbd5850800000000000000
+      internalID: 6367452348901017575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_4
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1041
+        width: 122
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa612433f55dd920800000000000000
+      internalID: 3016661828448119539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_5
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 1069
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0593a892592cd7ba0800000000000000
+      internalID: -6089497175232202416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_6
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1056
+        width: 102
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8ec27d7351993e0800000000000000
+      internalID: -2046581226085750570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_7
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1071
+        width: 51
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf8d342a4640d400800000000000000
+      internalID: 346854455557066688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_8
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1067
+        width: 54
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1dbe4f775a941430800000000000000
+      internalID: 3752794090095164700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_9
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 1053
+        width: 68
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2739ba89b12d4f0800000000000000
+      internalID: -805551040818351395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_10
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1004
+        width: 208
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b8c02933eefe1f0800000000000000
+      internalID: -1013329485874033835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_11
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 927
+        width: 192
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd285d7e3119dec0800000000000000
+      internalID: -3541780671861609003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_12
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 876
+        width: 51
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921ab55d77dbac900800000000000000
+      internalID: 705584614015213865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paranoia_lila_13
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 29
+        width: 268
+        height: 775
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fcfbd931dd5ce660800000000000000
+      internalID: 7416405839572630769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
