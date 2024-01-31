@@ -11,7 +11,7 @@ public class GameOverManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (GameManager.victory)
+        if (GameManager.VICTORY_CONDITION)
         {
             victoryPanel.SetActive(true);
             defeatPanel.SetActive(false);

@@ -9,13 +9,6 @@ public class NpcSpawner : MonoBehaviour
     public GameObject playerController;
 
     private List<GameObject> queue;
-
-    // Posiciones en las que se estacionan o a las que se dirigen los npc
-    private Vector3 SpawnPoint0 = new Vector3(-14.0f, -1.51f, 0.0f);
-    private Vector3 SpawnPoint1 = new Vector3(-11.0f, -1.51f, 0.0f);
-    private Vector3 SpawnPoint2 = new Vector3(-7.0f, -1.51f, 0.0f);
-    private Vector3 SpawnPoint3 = new Vector3(-3.0f, -1.51f, 0.0f);
-    private Vector3 SpawnPoint4 = new Vector3(1.0f, -1.51f, 0.0f);
     
     private string generateRandomCharacter()
     {
@@ -42,44 +35,23 @@ public class NpcSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         // Inicializamos la lista de los 4 npcs,
         queue = new List<GameObject>();
-
-        string aux = "Prefabs/" + generateRandomCharacter();
-        GameObject firstNpc = Instantiate((GameObject)Resources.Load(aux), SpawnPoint1, Quaternion.identity);
-        queue.Add(firstNpc);
-        firstNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint0, SpawnPoint1);
-        firstNpc.GetComponent<SpriteRenderer>().sortingOrder = 1;
-
-        aux = "Prefabs/" + generateRandomCharacter();
-        GameObject secondNpc = Instantiate((GameObject)Resources.Load(aux), SpawnPoint2, Quaternion.identity);
-        queue.Add(secondNpc);
-        secondNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint1, SpawnPoint2);
-        secondNpc.GetComponent<SpriteRenderer>().sortingOrder = 2;
-
-        aux = "Prefabs/" + generateRandomCharacter();
-        GameObject thirdNpc = Instantiate((GameObject)Resources.Load(aux), SpawnPoint3, Quaternion.identity);
-        queue.Add(thirdNpc);
-        thirdNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint2, SpawnPoint3);
-        thirdNpc.GetComponent<SpriteRenderer>().sortingOrder = 3;
-
-        aux = "Prefabs/" + generateRandomCharacter();
-        GameObject fourthNpc = Instantiate((GameObject)Resources.Load(aux), SpawnPoint4, Quaternion.identity);
-        queue.Add(fourthNpc);
-        fourthNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint3, SpawnPoint4);
-        fourthNpc.GetComponent<SpriteRenderer>().sortingOrder = 4;
+        queue.Add(spawnNpc(GameManager.SPAWNPOINT_0, GameManager.SPAWNPOINT_1, 1));
+        queue.Add(spawnNpc(GameManager.SPAWNPOINT_1, GameManager.SPAWNPOINT_2, 2));
+        queue.Add(spawnNpc(GameManager.SPAWNPOINT_2, GameManager.SPAWNPOINT_3, 3));
+        queue.Add(spawnNpc(GameManager.SPAWNPOINT_3, GameManager.SPAWNPOINT_4, 4));
 
     }
 
     // Creamos un npc, le pasamos su ubicación inicial, 
-    void spawnNpc()
+    private GameObject spawnNpc(Vector3 spawnPoint, Vector3 target, int layerPos)
     {
-        string aux = "Prefabs/" + generateRandomCharacter();
-        GameObject newNpc = Instantiate((GameObject)Resources.Load(aux), SpawnPoint0, Quaternion.identity);
-        queue[0] = newNpc;
-        newNpc.GetComponent<FABRICIANPC>().setInitialPosition(SpawnPoint0, SpawnPoint1);
-        newNpc.GetComponent<SpriteRenderer>().sortingOrder = 1;
+        string filename = "Prefabs/" + generateRandomCharacter();
+        GameObject newNpc = Instantiate((GameObject)Resources.Load(filename), spawnPoint, Quaternion.identity);
+        newNpc.GetComponent<FABRICIANPC>().setInitialPosition(spawnPoint, target);
+        newNpc.GetComponent<SpriteRenderer>().sortingOrder = layerPos;
+        return newNpc;
     }
 
 
@@ -89,21 +61,19 @@ public class NpcSpawner : MonoBehaviour
         for (int i = 3; i > 0; i--)
         {
             queue[i] = queue[i-1];
-
             aux.GetComponent<FABRICIANPC>().setDestination(dir);
         }
         updateNpcPosition();
-        spawnNpc();
+        queue[0] = spawnNpc(GameManager.SPAWNPOINT_0, GameManager.SPAWNPOINT_1, 1);
     }
 
     private void updateNpcPosition()
     {
-
-        queue[1].GetComponent<FABRICIANPC>().updateTarget(SpawnPoint2);
+        queue[1].GetComponent<FABRICIANPC>().updateTarget(GameManager.SPAWNPOINT_2);
         queue[1].GetComponent<SpriteRenderer>().sortingOrder = 2;
-        queue[2].GetComponent<FABRICIANPC>().updateTarget(SpawnPoint3);
+        queue[2].GetComponent<FABRICIANPC>().updateTarget(GameManager.SPAWNPOINT_3);
         queue[2].GetComponent<SpriteRenderer>().sortingOrder = 3;
-        queue[3].GetComponent<FABRICIANPC>().updateTarget(SpawnPoint4);
+        queue[3].GetComponent<FABRICIANPC>().updateTarget(GameManager.SPAWNPOINT_4);
         queue[3].GetComponent<SpriteRenderer>().sortingOrder = 4;
 
     }

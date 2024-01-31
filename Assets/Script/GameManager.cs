@@ -12,11 +12,16 @@ public class GameManager : MonoBehaviour
     public AudioClip[] Effects;
     private AudioSource reproductor;
 
-    public static bool victory = false;
+    public static bool VICTORY_CONDITION = false;
+
+    // Posiciones en las que se estacionan o a las que se dirigen los npc
+    public static Vector3 SPAWNPOINT_0 = new Vector3(-14.0f, -1.51f, 0.0f);
+    public static Vector3 SPAWNPOINT_1 = new Vector3(-11.0f, -1.51f, 0.0f);
+    public static Vector3 SPAWNPOINT_2 = new Vector3(-7.0f, -1.51f, 0.0f);
+    public static Vector3 SPAWNPOINT_3 = new Vector3(-3.0f, -1.51f, 0.0f);
+    public static Vector3 SPAWNPOINT_4 = new Vector3(1.0f, -1.51f, 0.0f);
 
     public static GameManager Instance { get; private set; }
-
-   
 
     
     public void Awake()

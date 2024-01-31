@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
 
         if(barFiller.fillAmount == 1)
         {
-            GameManager.victory = false;
+            GameManager.VICTORY_CONDITION = false;
             SceneManager.LoadScene("GameOver");
         }
        

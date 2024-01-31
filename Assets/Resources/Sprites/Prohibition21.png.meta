@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5686a720d534d694dbff0cab32000a1e
+guid: e0699785151179641ae323e915d59406
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9138735441268387556
-    second: NO GORRO VAQUERO_0
+      213: -7896257890025878119
+    second: NO GORRO MILITAR _0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NO GORRO VAQUERO_0
+      name: NO GORRO MILITAR _0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c11dce60980bc2180800000000000000
-      internalID: -9138735441268387556
+      spriteID: 99dc122094bda6290800000000000000
+      internalID: -7896257890025878119
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NO GORRO VAQUERO_0: -9138735441268387556
+      NO GORRO MILITAR _0: -7896257890025878119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

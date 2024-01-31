@@ -45,7 +45,7 @@ public class Clock : MonoBehaviour
         if (timer > 180)
         {
 
-            GameManager.victory = true;
+            GameManager.VICTORY_CONDITION = true;
             SceneManager.LoadScene("GameOver");
 
         }
