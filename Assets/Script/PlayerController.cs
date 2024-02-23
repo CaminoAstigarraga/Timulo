@@ -168,10 +168,10 @@ public class PlayerController : MonoBehaviour
                 position = 2;
                 value = Random.Range(1, 4);
                 break;
-            // creature type again
+            // creature type again (including cards)
             default:
                 position = 0;
-                value = Random.Range(1, 4);
+                value = Random.Range(0, 4);
                 break;
         }
         int[] prohibition = new int[] { position, value };
