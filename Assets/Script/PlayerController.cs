@@ -138,7 +138,56 @@ public class PlayerController : MonoBehaviour
 
     public void addProhibition(int currentProhibition)
     {
-        int position;
+        int position = 0;
+        int value = 0;
+
+        switch (currentProhibition)
+        {
+                // card type
+            case 0:
+                position = 1;
+                value = Random.Range(0, 5);
+                break;
+                // hat type
+            case 1:
+                position = 2;
+                value = Random.Range(1, 4);
+                break;
+                // creature type
+            case 2:
+                position = 0;
+                value = Random.Range(1, 4);
+                break;
+                // sunglasses
+            case 3:
+                position = 3;
+                value = 1;
+                break;
+            // hat type again
+            case 4:
+                position = 2;
+                value = Random.Range(1, 4);
+                break;
+            // creature type again
+            default:
+                position = 0;
+                value = Random.Range(1, 4);
+                break;
+        }
+        int[] prohibition = new int[] { position, value };
+        foreach (int[] item in activeProhibitions)
+        {
+            if (prohibition == item)
+            {
+                addProhibition(currentProhibition);
+                return;
+            }
+        }
+        prohibitionPanels[currentProhibition].SetActive(true);
+        prohibitionPanels[currentProhibition].GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Prohibition" + position + value);
+        activeProhibitions.Add(prohibition);
+        // old code
+        /*int position;
         int value;
 
         position = Random.Range(0, 4);
@@ -171,6 +220,6 @@ public class PlayerController : MonoBehaviour
         }
         prohibitionPanels[currentProhibition].SetActive(true);
         prohibitionPanels[currentProhibition].GetComponentInChildren<Image>().sprite = Resources.Load<Sprite>("Sprites/Prohibition" + position + value);
-        activeProhibitions.Add(prohibition);
+        activeProhibitions.Add(prohibition);*/
     }
 }

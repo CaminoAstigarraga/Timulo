@@ -61,14 +61,12 @@ public class Clock : MonoBehaviour
 
     private void timeAdvance()
     {
-        if (timer >= 30)
-            currentProhibition++;
-
-
         queen.GetComponent<Queen>().peepIn();
 
         playerController.GetComponent<PlayerController>().addProhibition(currentProhibition);
 
         playerController.GetComponent<PlayerController>().increaseSpeed();
+
+        currentProhibition++;
     }
 }
